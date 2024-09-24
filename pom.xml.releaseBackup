@@ -8,30 +8,15 @@
 
     <groupId>com.googlecode.blaisemath.com.clust4j</groupId>
     <artifactId>clust4j</artifactId>
-    <version>1.2.4.4-SNAPSHOT</version>
+    <version>1.2.4.3-SNAPSHOT</version>
     <packaging>jar</packaging>
-
-    <name>clust4j</name>
-    <description>A suite of classification clustering algorithm implementations for Java. A number of partitional, hierarchical and density-based algorithms including DBSCAN, k-Means, k-Medoids, MeanShift, Affinity Propagation, HDBSCAN and more.</description>
-    <url>https://github.com/tgsmith61591/clust4j</url>
-
-    <developers>
-        <developer>
-            <name>Taylor G Smith</name>
-            <email>taylor.smith@alkaline-ml.com</email>
-        </developer>
-        <developer>
-            <name>Elisha Peterson</name>
-            <email>triathematician@gmail.com</email>
-        </developer>
-    </developers>
 
     <scm>
         <connection>scm:git:git@github.com:triathematician/clust4j.git</connection>
         <developerConnection>scm:git:git@github.com:triathematician/clust4j.git</developerConnection>
         <url>git@github.com:triathematician/clust4j.git</url>
       <tag>HEAD</tag>
-    </scm>
+  </scm>
 
     <distributionManagement>
         <repository>
