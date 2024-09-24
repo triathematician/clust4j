@@ -41,23 +41,43 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <slf4j.version>2.0.13</slf4j.version>
+        <apache.commons.math3.version>3.6.1</apache.commons.math3.version>
+        <apache.commons.lang3.version>3.14.0</apache.commons.lang3.version>
+        <apache.logging.log4j.version>2.24.0</apache.logging.log4j.version>
     </properties>
 
     <dependencies>
         <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <version>1.2.17</version>
-        </dependency>
-        <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-math3</artifactId>
-            <version>3.6.1</version>
+            <version>${apache.commons.math3.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
-            <version>3.4</version>
+            <version>${apache.commons.lang3.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${apache.logging.log4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>${apache.logging.log4j.version}</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-slf4j-impl</artifactId>
+            <version>${apache.logging.log4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
@@ -141,10 +161,6 @@
                 <configuration>
                     <outputDirectory>${project.build.directory}/jacoco-report</outputDirectory>
                     <dataFile>${project.build.directory}/jacoco.exec</dataFile>
-                    <reports>
-                        <xml>true</xml>
-                        <html>true</html>
-                    </reports>
                 </configuration>
             </plugin>
         </plugins>
